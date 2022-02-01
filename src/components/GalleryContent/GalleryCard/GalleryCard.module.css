@@ -1,0 +1,63 @@
+.likeButton{
+    color: rgb(255, 112, 112);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    transition: .25s ease all;
+}
+.likeButton span{
+    font-size: 16px;
+    margin-left: 16px;
+}
+.likeButton:hover, .likeButton.isActive{
+    color: #fff;
+    background-color: rgb(255, 112, 112);
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.048);
+    padding: 40px 0;
+}
+.post:last-child{
+    border-bottom: none;
+}
+.post img{
+    width: 50px;
+}
+.post .closeBtn{
+    border: none;
+    background-color: transparent;
+}
+
+.postContent{
+    max-width: 700px;
+}
+.postLeft{
+    display: flex; 
+    align-items: center;
+}
+.postLike{
+    margin-right: 40px;
+}
+.postContent p {
+    line-height: 1.6;
+    color: rgb(80, 80, 80);
+}
+.postContent h2{
+    color: rgb(53, 53, 53);
+}
+.closeBtn img{
+    opacity: 0.7;
+    transition: 0.25s all ease;
+}
+.closeBtn img:hover{
+    transform: rotate(180deg);
+    opacity: 1;
+}
